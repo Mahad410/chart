@@ -10,34 +10,35 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Expenses chart component</title>
+</head>
 
-    <body>
-        <main>
-            <div class="container">
-                <header class="flex">
-                    <div class="balance">
-                        <p>My balance</p>
-                        <h1>$921.48</h1>
+<body>
+    <main>
+        <div class="container">
+            <header class="flex">
+                <div class="balance">
+                    <p>My balance</p>
+                    <h1>$921.48</h1>
+                </div>
+                <img src="logo.svg" alt="logo">
+            </header>
+            <div class="details">
+                <h1>Spending - Last 7 days</h1>
+                <canvas id="myChart"></canvas>
+                <div class="flex t_flex">
+                    <div class="total">
+                        <p class="grey">Total this month</p>
+                        <h1>$478.33</h1>
                     </div>
-                    <img src="logo.svg" alt="logo">
-                </header>
-                <div class="details">
-                    <h1>Spending - Last 7 days</h1>
-                    <canvas id="myChart"></canvas>
-                    <div class="flex t_flex">
-                        <div class="total">
-                            <p class="grey">Total this month</p>
-                            <h1>$478.33</h1>
-                        </div>
-                        <div class="gain">
-                            <p class="num">+ 2.4%</p>
-                            <p class="grey">from last month</p>
-                        </div>
+                    <div class="gain">
+                        <p class="num">+ 2.4%</p>
+                        <p class="grey">from last month</p>
                     </div>
                 </div>
             </div>
-        </main>
-        <script type="text/javascript" src="main.js"></script>
-    </body>
+        </div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+</body>
 
 </html>
